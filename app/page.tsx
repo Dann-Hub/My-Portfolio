@@ -9,20 +9,19 @@ export default function Home() {
       <Header />
       <main className="relative min-h-screen overflow-hidden bg-black text-white">
         {/* Animated Background */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 pointer-events-none">
           <BoidsEcosystem />
         </div>
 
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 pointer-events-none bg-black/40" />
 
         {/* Content */}
-        <div className="relative z-10 flex min-h-screen flex-col justify-between">
+        <div className="relative z-10 flex min-h-screen  flex-col justify-between">
           
           {/* Hero Section */}
           <section className="flex flex-1 items-center justify-center px-6">
             <div className="text-center">
-              <h1 className="text-6xl font-black tracking-tight md:text-8xl lg:text-8xl">
+              <h1 className="text-[2.5rem] font-black tracking-tight md:text-8xl lg:text-8xl">
                 Daniel O. Boateng
               </h1>
 
