@@ -1,7 +1,7 @@
 import Link from "next/link";
 import BoidsEcosystem from "@/components/animata/background/boids-ecosystem";
 import Header from "@/components/Header";
-
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
                 Daniel O. Boateng
               </h1>
 
-              <p className="mt-5 text-lg uppercase tracking-[0.4em] text-slate-300 md:text-xl">
+              <p className="mt-5 text-lg uppercase tracking-[0.4em] text-yellow-100 md:text-xl">
                 Engineer • Developer • Entrepreneur
               </p>
 
@@ -37,65 +37,7 @@ export default function Home() {
               </Link>
             </div>
           </section>
-
-          {/* Footer */}
-          <footer className="border-t border-white/10 px-8 py-8 backdrop-blur-sm">
-            <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
-              {/* Left */}
-              <div>
-                <h3 className="text-xl font-semibold">
-                  Let's work together
-                </h3>
-
-                <p className="mt-2 text-slate-300">
-                  danieloseiboateng5@gmail.com
-                </p>
-
-                <p className="text-slate-300">
-                  +233 55 354 6477
-                </p>
-              </div>
-
-              {/* Right */}
-              <div className="flex items-center gap-6 text-2xl">
-                <a
-                  href="https://github.com/Dann-Hub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition hover:scale-110"
-                >
-                  <i className="fab fa-github" />
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/danieloseiboateng5/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition hover:scale-110"
-                >
-                  <i className="fab fa-linkedin" />
-                </a>
-
-                <a
-                  href="https://x.com/MrDanielBoateng"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition hover:scale-110"
-                >
-                  <i className="fab fa-x-twitter" />
-                </a>
-
-                <a
-                  href="https://www.instagram.com/danielboateng5/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition hover:scale-110"
-                >
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-            </div>
-          </footer>
+        <Footer/>
         </div>
       </main>
     </>

@@ -1,45 +1,46 @@
 import Link from "next/link";
+import Header from "@/components/Header"
+import Footer from "@/components/Footer";
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-5xl px-6 py-20">
-      <Link
-        href="/"
-        className="mb-12 inline-block text-slate-500 hover:text-black"
-      >
-        ← Back Home
-      </Link>
+      <>
+        <Header />
+        <main className="mx-auto min-h-screen max-w-7xl px-6 py-20 bg-blue-400">
+          <div>
+            <h1 className="text-5xl font-bold">
+              About Me
+            </h1>
 
-      <h1 className="text-5xl font-bold">
-        About Me
-      </h1>
+            <div className="mt-10 space-y-6 text-lg leading-9 text-slate-600">
+              <p>
+                I'm Daniel Osei Boateng, a software developer
+                passionate about building digital products that
+                solve real-world problems.
+              </p>
 
-      <div className="mt-10 space-y-6 text-lg leading-9 text-slate-600">
-        <p>
-          I'm Daniel Osei Boateng, a software developer
-          passionate about building digital products that
-          solve real-world problems.
-        </p>
+              <p>
+                My work spans web applications, school
+                management systems, automation tools, APIs,
+                databases, and custom software solutions.
+              </p>
 
-        <p>
-          My work spans web applications, school
-          management systems, automation tools, APIs,
-          databases, and custom software solutions.
-        </p>
+              <p>
+                I enjoy transforming ideas into scalable,
+                user-friendly products using modern
+                technologies such as Next.js, React,
+                TypeScript, Node.js, Python, and MySQL.
+              </p>
 
-        <p>
-          I enjoy transforming ideas into scalable,
-          user-friendly products using modern
-          technologies such as Next.js, React,
-          TypeScript, Node.js, Python, and MySQL.
-        </p>
-
-        <p>
-          Beyond coding, I am committed to continuous
-          learning, innovation, and creating technology
-          that delivers meaningful impact.
-        </p>
-      </div>
-    </main>
+              <p>
+                Beyond coding, I am committed to continuous
+                learning, innovation, and creating technology
+                that delivers meaningful impact.
+              </p>
+            </div>
+          </div>
+      </main>
+      <Footer/>
+    </>
   );
 }
