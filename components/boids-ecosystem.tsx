@@ -46,16 +46,16 @@ interface BoidsEcosystemProps {
 const DEFAULT_PALETTE = ["#f5f5f4", "#fde68a", "#93c5fd", "#fca5a5"];
 
 export default function BoidsEcosystem({
-  count = 600,
-  background = "#424297",
-  palette = DEFAULT_PALETTE,
-  cursorRadius = 90,
-  attractors,
-  agentsRef,
-  agentShape = "triangle",
-  className,
-  children,
-}: BoidsEcosystemProps) {
+                                         count = 600,
+                                         background = "#ebeef3",
+                                         palette = DEFAULT_PALETTE,
+                                         cursorRadius = 90,
+                                         attractors,
+                                         agentsRef,
+                                         agentShape = "triangle",
+                                         className,
+                                         children,
+                                       }: BoidsEcosystemProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const cursorRef = useRef<{ x: number; y: number; active: boolean }>({
     x: 0,
@@ -244,13 +244,13 @@ export default function BoidsEcosystem({
   }, [count, agentsRef]);
 
   return (
-    <div className={cn("relative h-full w-full overflow-hidden rounded-lg", className)}>
-      <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" style={{ background }} />
-      {children && (
-        <div className="relative z-10 flex h-full items-center justify-center pointer-events-none">
-          {children}
-        </div>
-      )}
-    </div>
+      <div className={cn("relative h-full w-full overflow-hidden rounded-lg", className)}>
+        <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" style={{ background }} />
+        {children && (
+            <div className="relative z-10 flex h-full items-center justify-center pointer-events-none">
+              {children}
+            </div>
+        )}
+      </div>
   );
 }

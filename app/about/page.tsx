@@ -1,12 +1,12 @@
 import Link from "next/link";
-import Header from "@/components/Header"
-import Footer from "@/components/Footer";
+import Header from "@/components/header"
+import Footer from "@/components/footer";
 
 export default function AboutPage() {
   return (
       <>
         <Header />
-        <main className="mx-auto min-h-screen max-w-7xl px-6 py-20 bg-blue-400">
+        <main className="mx-auto min-h-screen px-6 py-20 bg-[#ebeef3]">
           <div>
             <h1 className="text-5xl font-bold">
               About Me
