@@ -31,7 +31,7 @@ export function Hero() {
                             Boateng
                         </h1>
 
-                        <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed tracking-widest text-muted-foreground lg:mx-0">
+                        <p className="mx-auto mt-6  text-lg leading-relaxed tracking-widest text-muted-foreground lg:mx-0">
                             ELECTRICAL ENGINEER ● SOFTWARE DEVELOPER
                         </p>
 

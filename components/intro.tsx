@@ -1,58 +1,134 @@
 import Image from "next/image"
+import {Experience} from "@/components/experience";
 
 export function Intro() {
     return (
-        <section id="about"  className="relative z-20 -mt-5 bg-background ">
-            <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-28">
-                <div>
-                    <h2 className="font-heading text-4xl font-medium leading-tight text-foreground sm:text-5xl text-balance">
-                        Hello, I&apos;m Freelancer Web Designer &amp; Developer
-                    </h2>
-                    <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground text-pretty">
-                        I help startups and established brands craft thoughtful digital
-                        experiences. From the first sketch to the final line of code, I focus
-                        on insight, vision and flawless execution that moves your business
-                        forward.
-                    </p>
+        <section id="about" className="relative z-20 -mt-5 bg-background ">
+            <div>
+                <div className="mx-auto grid max-w-7xl gap-10 px-6 py-5 lg:grid-cols-[7fr_3fr] lg:gap-16 lg:px-8 lg:py-15 lg:pt-20">
+                    <div>
+                        <h2 className="font-heading text-4xl font-bold leading-tight text-center lg:text-left text-foreground sm:text-5xl">
+                            About Me
+                        </h2>
+                        <p className="mt-6 max-w-full text-base leading-relaxed text-justify text-muted-foreground text-pretty">
+                            I am a results-oriented professional with a strong foundation in both Electrical/Electronic
+                            Engineering and
+                            Systems Management. Throughout my career, from serving as a District Manager for the Ghana
+                            Statistical Service
+                            to leading projects for the Ghana Institution of Engineering (Students’ Chapter), I have
+                            balanced high-level
+                            operational strategy with hands-on technical execution.<br/>
+                            Now, as a Certified AWS Cloud Practitioner with a focus on Python-driven automation, I am
+                            seeking to leverage my
+                            leadership experience and technical versatility to contribute to forward-thinking
+                            engineering projects.
+                        </p>
+                    </div>
 
-                    <div className="mt-10 grid grid-cols-3 gap-6">
-                        {[
-                            { value: "12+", label: "Years Experience" },
-                            { value: "240", label: "Projects Done" },
-                            { value: "180", label: "Happy Clients" },
-                        ].map((stat) => (
-                            <div key={stat.label}>
-                                <div className="font-heading text-3xl font-bold text-foreground">
-                                    {stat.value}
-                                </div>
-                                <div className="mt-1 text-sm text-muted-foreground">
-                                    {stat.label}
-                                </div>
-                            </div>
-                        ))}
+                    <div className="relative flex justify-center items-start">
+                        <Image
+                            src="/images/aws-certified.png"
+                            alt="Creative design work on a monitor"
+                            width={150}
+                            height={100}
+                            className="h-auto w-[50%] object-cover"
+                        />
                     </div>
                 </div>
+                <div className="mx-auto grid  max-w-7xl gap-12 px-6 py-5 lg:px-8 ">
+                    <div>
+                        <h2 className="font-bold text-3xl">
+                            Skills
+                        </h2>
+                        {/* Skills Grid */}
+                        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-                <div className="relative h-[420px]">
-                    <div className="absolute left-0 top-8 w-3/5 overflow-hidden rounded-lg shadow-xl">
-                        <Image
-                            src="/images/work-1.png"
-                            alt="Lucie working at her desk"
-                            width={500}
-                            height={360}
-                            className="h-auto w-full object-cover"
-                        />
+                            <div className="rounded-2xl border border-slate-200 bg-[#e8ecf2] p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+                                <h3 className="mb-4 text-xl font-semibold text-foreground">
+                                    Frontend Development
+                                </h3>
+
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">React</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Next.js</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">TypeScript</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Tailwind CSS</span>
+                                </div>
+                            </div>
+
+                            <div className="rounded-2xl border border-slate-200 bg-[#e8ecf2] p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+                                <h3 className="mb-4 text-xl font-semibold text-foreground">
+                                    Backend Development
+                                </h3>
+
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Node.js</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Python</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Django</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">REST APIs</span>
+                                </div>
+                            </div>
+
+                            <div className="rounded-2xl border border-slate-200 bg-[#e8ecf2] p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+                                <h3 className="mb-4 text-xl font-semibold text-foreground">
+                                    Database Systems
+                                </h3>
+
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">MySQL</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">PostgreSQL</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">SQLite</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Database Design</span>
+                                </div>
+                            </div>
+
+                            <div className="rounded-2xl border border-slate-200 bg-[#e8ecf2] p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+                                <h3 className="mb-4 text-xl font-semibold text-foreground">
+                                    Cloud & DevOps
+                                </h3>
+
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">AWS</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Docker</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Git</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">CI/CD</span>
+                                </div>
+                            </div>
+
+                            <div className="rounded-2xl border border-slate-200 bg-[#e8ecf2] p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+                                <h3 className="mb-4 text-xl font-semibold text-foreground">
+                                    Electrical Engineering
+                                </h3>
+
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Power Systems</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Circuit Design</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Automation</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">PLC Systems</span>
+                                </div>
+                            </div>
+
+                            <div className="rounded-2xl border border-slate-200 bg-[#e8ecf2] p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+                                <h3 className="mb-4 text-xl font-semibold text-foreground">
+                                    Leadership & Management
+                                </h3>
+
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Project Management</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Team Leadership</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Communication</span>
+                                    <span className="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Problem Solving</span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div className="absolute right-0 top-0 w-2/5 overflow-hidden rounded-lg border-4 border-background shadow-xl">
-                        <Image
-                            src="/images/work-2.png"
-                            alt="Creative design work on a monitor"
-                            width={360}
-                            height={300}
-                            className="h-auto w-full object-cover"
-                        />
-                    </div>
-                    <div className="absolute bottom-0 right-8 h-24 w-24 rounded-full bg-accent-yellow/20" />
+                </div>
+                <div className=" mx-auto grid  max-w-7xl gap-12 px-6 py-5 lg:px-8 ">
+                    <h2 className="font-black">
+                        Experience
+                    </h2>
+                    <Experience />
                 </div>
             </div>
         </section>
