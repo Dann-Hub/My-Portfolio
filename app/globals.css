@@ -5,8 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /*noinspection CssUnresolvedCustomProperty*/
   --font-heading: var(--font-playfair), 'Georgia', serif;
+  /*noinspection CssUnresolvedCustomProperty*/
   --font-sans: var(--font-open-sans), 'Open Sans Fallback';
+  /*noinspection CssUnresolvedCustomProperty*/
   --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
   --color-hero: var(--hero);
   --color-accent-yellow: var(--accent-yellow);
