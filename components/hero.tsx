@@ -3,10 +3,7 @@ import BoidsEcosystem from "@/components/boids-ecosystem";
 
 export function Hero() {
     return (
-        <section
-            id="home"
-            className="relative min-h-screen overflow-hidden"
-        >
+        <section id="home" className="relative min-h-screen overflow-hidden">
             {/* Animated Background */}
             <BoidsEcosystem
                 className="absolute inset-0 h-full w-full rounded-none"
@@ -25,7 +22,7 @@ export function Hero() {
 
                     {/* Text Column */}
                     <div className="order-2 text-center lg:order-1 lg:text-left">
-                        <h1 className="font-heading text-5xl font-black leading-[1.05] tracking-wide text-foreground sm:text-6xl lg:text-7xl">
+                        <h1 className="font-heading text-5xl font-bold leading-[1.05] tracking-wide text-foreground sm:font-normal sm:text-6xl lg:text-7xl">
                             Daniel Osei
                             <br />
                             Boateng

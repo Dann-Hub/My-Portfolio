@@ -1,5 +1,4 @@
 import Image from "next/image"
-import {Experience} from "@/components/experience";
 
 export function Intro() {
     return (
@@ -125,10 +124,6 @@ export function Intro() {
                     </div>
                 </div>
                 <div className=" mx-auto grid  max-w-7xl gap-12 px-6 py-5 lg:px-8 ">
-                    <h2 className="font-black">
-                        Experience
-                    </h2>
-                    <Experience />
                 </div>
             </div>
         </section>

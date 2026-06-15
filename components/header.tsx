@@ -60,7 +60,7 @@ function Logo() {
             />
 
             <span className="font-heading text-2xl font-bold text-foreground">
-                Daniel
+                Daniel<span className="text-primary text-5xl">.</span>
             </span>
         </Link>
     );
