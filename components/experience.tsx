@@ -1,14 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
-import {
-    faCode,
-    faBolt,
-    faUserGear,
-} from "@fortawesome/free-solid-svg-icons";
-
 
 export default function Skills() {
     return (
@@ -83,7 +75,7 @@ export default function Skills() {
                     <div className=" grid lg:grid-cols-[1fr_9fr] gap-5">
                         <div className="relative overflow-hidden h-18 w-18 ">
                             <Image
-                                src="/images/gss-logo.WEBP"
+                                src="/images/gss-logo.JPG"
                                 alt="daniel picture"
                                 fill
                                 className="object-cover"
@@ -116,7 +108,7 @@ export default function Skills() {
                     <div className=" grid lg:grid-cols-[1fr_9fr] gap-5">
                         <div className="relative overflow-hidden h-18 w-18 ">
                             <Image
-                                src="/images/gss-logo.WEBP"
+                                src="/images/gss-logo.JPG"
                                 alt="GSS LOGO"
                                 fill
                                 className="object-cover"
