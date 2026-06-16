@@ -75,7 +75,7 @@ export default function Skills() {
                     <div className=" grid lg:grid-cols-[1fr_9fr] gap-5">
                         <div className="relative overflow-hidden h-18 w-18 ">
                             <Image
-                                src="/images/gss-logo.JPG"
+                                src="/images/gss-logo.jpg"
                                 alt="daniel picture"
                                 fill
                                 className="object-cover"
@@ -108,7 +108,7 @@ export default function Skills() {
                     <div className=" grid lg:grid-cols-[1fr_9fr] gap-5">
                         <div className="relative overflow-hidden h-18 w-18 ">
                             <Image
-                                src="/images/gss-logo.JPG"
+                                src="/images/gss-logo.jpg"
                                 alt="GSS LOGO"
                                 fill
                                 className="object-cover"
