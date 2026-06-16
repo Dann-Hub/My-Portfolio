@@ -3,7 +3,7 @@ import BoidsEcosystem from "@/components/boids-ecosystem";
 
 export function Hero() {
     return (
-        <section id="home" className="relative min-h-screen overflow-hidden">
+        <section id="home" className="relative min-h-screen overflow-hidden z-10">
             {/* Animated Background */}
             <BoidsEcosystem
                 className="absolute inset-0 h-full w-full rounded-none"
@@ -52,7 +52,7 @@ export function Hero() {
                             <div className="absolute left-[55%] top-[30%] hidden w-[80%] aspect-square -translate-x-1/2 -translate-y-1/2 rounded-full bg-card shadow-inner lg:block" />
 
                             {/* Mobile White Frame */}
-                            <div className="relative rounded-xl border-2 border-slate-200 bg-white p-2 shadow-lg lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+                            <div className="relative rounded-xl border-2 border-slate-200 bg-white  shadow-lg lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
                                 <Image
                                     src="/images/daniel.png"
                                     alt="Photo of Daniel Osei Boateng"
