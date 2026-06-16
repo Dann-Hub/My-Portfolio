@@ -17,8 +17,8 @@ import {
 const navItems = [
     "Home",
     "About",
-    "Portfolio",
-    "Leadership",
+    "Skills",
+    "Experience",
     "Contact",
     "Hire Me",
 ];

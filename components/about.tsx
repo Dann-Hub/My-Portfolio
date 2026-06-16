@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <section id="about" className="min-h-screen relative overflow-hidden py-32 md:-mt-30 bg-white z-20 lg:-mt-5">
-            <div className="max-w-7xl mx-auto -mt-20">
+            <div className="max-w-7xl mx-auto -mt-8">
                 <div className="text-center">
                     <h1 className="font-bold font-heading text-4xl ">
                         About Me
@@ -16,7 +16,7 @@ export default function About() {
             </div>
 
             <div
-                className="mx-auto max-w-6xl  px-6 grid grid-cols-1 justify-items-center gap-12 mt-14 lg:grid-cols-[7fr_3fr] lg:justify-items-stretch">
+                className="mx-auto max-w-6xl  px-6 grid grid-cols-1 justify-items-center gap-12 mt-10 lg:grid-cols-[7fr_3fr] lg:justify-items-stretch">
                 <div className="order-2 text-center lg:order-1 lg:text-left">
                     <div className="">
                         <div className="justify-items-start">

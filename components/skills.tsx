@@ -12,14 +12,14 @@ import {
 
 export default function Skills() {
     return (
-        <section id="about" className="min-h-screen relative overflow-hidden bg-[#e8ecf2]/40 py-32">
-            <div className="max-w-6xl mx-auto text-center items-center justify-center -mt-20 px-6">
+        <section id="skills" className="min-h-screen relative overflow-hidden bg-[#e8ecf2]/40 py-32">
+            <div className="max-w-6xl mx-auto text-center items-center justify-center -mt-5 px-6">
                 <h2 className="font-heading font-bold text-4xl leading-10">Skills</h2>
                 <div className="mx-auto mt-5 h-0.5 w-18 rounded-full bg-accent-yellow"/>
 
                 <div className="grid gap-14 lg:grid-cols-3 items-center justify-center mt-10">
                     <div className="relative flex h-full flex-col gap-5 items-center rounded-3xl bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                        <div className="flex h-17 w-17 items-center justify-center border-3 border-blue-950/40 rounded-full bg-[#e8ecf2]/40">
+                        <div className="flex h-17 w-17 items-center justify-center border-3 border-blue-950/40 bg-[#e8ecf2]/40 rounded-full ">
                             <FontAwesomeIcon
                                 icon={faCode}
                                 className="text-4xl text-accent-yellow"
