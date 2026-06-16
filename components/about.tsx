@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <section id="about" className="min-h-screen relative overflow-hidden py-32">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto -mt-20">
                 <div className="text-center">
                     <h1 className="font-bold font-heading text-4xl ">
                         About Me
