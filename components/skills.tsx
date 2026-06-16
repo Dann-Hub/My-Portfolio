@@ -13,7 +13,7 @@ import {
 export default function Skills() {
     return (
         <section id="about" className="min-h-screen relative overflow-hidden bg-[#e8ecf2]/40 py-32">
-            <div className="max-w-6xl mx-auto text-center items-center justify-center -mt-20">
+            <div className="max-w-6xl mx-auto text-center items-center justify-center -mt-20 px-6">
                 <h2 className="font-heading font-bold text-4xl leading-10">Skills</h2>
                 <div className="mx-auto mt-5 h-0.5 w-18 rounded-full bg-accent-yellow"/>
 
