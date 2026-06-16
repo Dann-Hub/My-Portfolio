@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { Footer } from "@/components/footer"
 import About from "@/components/about";
+import Skills from "@/components/skills";
 
 
 
@@ -13,6 +14,7 @@ export default function Page() {
                 <Hero />
             </div>
             <About />
+            <Skills/>
             <Footer />
         </main>
     )

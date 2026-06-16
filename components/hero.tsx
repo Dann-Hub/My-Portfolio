@@ -17,7 +17,7 @@ export function Hero() {
             <div className="pointer-events-none absolute inset-0 bg-hero/40" />
 
             {/* Content */}
-            <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-start pt-35 px-6 lg:items-center lg:pt-0 lg:px-8">
+            <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl items-start pt-35 px-6 lg:items-center lg:pt-0 lg:px-8">
                 <div className="grid w-full items-center gap-2 lg:grid-cols-2 lg:gap-8">
 
                     {/* Text Column */}
