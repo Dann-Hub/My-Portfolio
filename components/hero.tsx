@@ -6,7 +6,7 @@ export function Hero() {
         <section id="home" className="relative min-h-screen overflow-hidden z-10">
             {/* Animated Background */}
             <BoidsEcosystem
-                className="absolute inset-0 h-full w-full rounded-none"
+                className="absolute inset-0 h-full w-full rounded-none pointer-events-none"
                 background="#e8ecf2"
                 palette={["#dbe2ec", "#38bdf8", "#1e3a5f", "#f6a623"]}
                 count={420}
@@ -33,14 +33,15 @@ export function Hero() {
                         </p>
 
                         <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-accent-yellow lg:mx-0" />
-
-                        <div className="mt-8 flex justify-center lg:justify-start">
-                            <a
-                                href="#hire-me"
-                                className="inline-flex items-center justify-center rounded-full bg-primary px-10 py-4 text-sm font-semibold uppercase tracking-widest text-primary-foreground shadow-lg shadow-primary/30 transition-transform hover:scale-105"
-                            >
-                                Hire Me
-                            </a>
+                        <div className="grid lg:grid-cols-2">
+                            <div className="mt-8 flex justify-center lg:justify-start">
+                                <a
+                                    href="#contact"
+                                    className="inline-flex items-center justify-center rounded-full bg-primary px-10 py-4 text-sm font-semibold uppercase tracking-widest text-primary-foreground shadow-lg shadow-primary/30 transition-transform hover:scale-105"
+                                >
+                                    Hire Me
+                                </a>
+                            </div>
                         </div>
                     </div>
 

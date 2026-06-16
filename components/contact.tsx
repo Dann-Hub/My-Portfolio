@@ -38,12 +38,12 @@ const socials = [
 
 export default function Contact() {
     return (
-        <section id="contact" className="relative overflow-hidden bg-[#07152d] py-32">
+        <section id="contact" className="relative min-h-screen overflow-hidden bg-[#07152d] py-32">
             {/* Background Blobs */}
             <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-yellow-400/20 blur-3xl"/>
             <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl"/>
 
-            <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 items-center">
 
                 {/* Header */}
                 <div className="text-center">
@@ -51,7 +51,7 @@ export default function Contact() {
                         Contact
                     </p>
 
-                    <h2 className="mt-6 font-heading text-5xl font-bold leading-tight text-white lg:text-7xl">
+                    <h2 className="mt-6 font-heading text-4xl font-bold leading-tight text-white lg:text-7xl">
                         Let&apos;s Build
                         <span className="block text-yellow-300">
                             Something Amazing.
@@ -126,7 +126,7 @@ export default function Contact() {
                         </div>
 
                         {/* Socials */}
-                        <div className="flex gap-4 pt-6">
+                        <div className="flex flex-wrap items-center justify-center gap-4 pt-6 ">
                             {socials.map(({icon, label, href}) => (
                                     <a
                                         key={label}
@@ -140,6 +140,15 @@ export default function Contact() {
                                     </a>
                                 )
                             )}
+                            <div className=" flex justify-center lg:justify-start">
+                                <a
+                                    href="/download-cv.pdf"
+                                    download
+                                    className="inline-flex items-center justify-center rounded-2xl bg-red-400 px-5 py-4 text-sm font-semibold uppercase tracking-widest text-primary-foreground shadow-lg shadow-primary/30 transition-transform hover:scale-105"
+                                >
+                                    Download CV
+                                </a>
+                            </div>
                         </div>
                     </div>
 

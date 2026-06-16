@@ -20,7 +20,7 @@ const navItems = [
     "Skills",
     "Experience",
     "Contact",
-    "Hire Me",
+    "Download CV",
 ];
 
 const socials = [
@@ -49,7 +49,7 @@ const socials = [
 
 function Logo() {
     return (
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="" className="flex items-center gap-3">
             <Image
                 src="/logo.png"
                 alt="Logo"
@@ -91,7 +91,7 @@ export function Header() {
 
     return (
         <header ref={headerRef} className="fixed top-0 left-0 right-0 z-50 bg-[#e8ecf2] backdrop-blur-md">
-            <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
+            <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8 ">
                 <Logo />
 
                 {/* Mobile Menu Button */}
@@ -106,17 +106,29 @@ export function Header() {
                 {/* Desktop Navigation */}
                 <div className="hidden items-center gap-8 lg:flex">
                     <nav className="flex items-center gap-2">
-                        {navItems.map((item, i) => (
-                            <a
-                                key={item}
-                                href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-                                className={`${navLink} ${
-                                    i === 0 ? "text-primary" : "text-foreground"
-                                }`}
-                            >
-                                {item}
-                            </a>
-                        ))}
+                        {navItems.map((item, i) =>
+                            item === "Download CV" ? (
+                                <a
+                                    key={item}
+                                    href="/download-cv.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`${navLink} bg-red-400 text-white`}
+                                >
+                                    Download CV
+                                </a>
+                            ) : (
+                                <a
+                                    key={item}
+                                    href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                                    className={`${navLink} ${
+                                        i === 0 ? "text-primary" : "text-foreground"
+                                    }`}
+                                >
+                                    {item}
+                                </a>
+                            )
+                        )}
                     </nav>
 
                     {/* Social Icons */}

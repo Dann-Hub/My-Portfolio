@@ -172,6 +172,7 @@
   }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
   }
 }
 
@@ -192,3 +193,4 @@
 .float {
   animation: float 4s ease-in-out infinite;
 }
+

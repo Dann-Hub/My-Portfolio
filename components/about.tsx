@@ -51,7 +51,7 @@ export default function About() {
                             </div>
                         </div>
                         <div className="relative mt-9 flex justify-center lg:justify-start">
-                            <a href="/contact"
+                            <a href="#contact"
                                className="inline-flex items-center justify-center rounded-2xl bg-blue-950 px-10 py-4 text-sm font-semibold uppercase tracking-widest text-primary-foreground shadow-lg shadow-primary/30 transition-transform hover:scale-105">
                                 Contact Me
                             </a>
